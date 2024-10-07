@@ -13,7 +13,7 @@ def get_days_from_today(date):
 input_date = input("Enter date in 'YYYY-MM-DD' format >>> ").strip()
 difference = get_days_from_today(input_date)
 
-if difference:
+if difference or difference == 0:
     print(f"Difference between today and '{input_date}' is {difference} days.")
 else:
     print(f"Incorrect input date format: '{input_date if input_date else 'Empty input'}'")
